@@ -7,9 +7,7 @@ public class IsListPalindromic {
 	@EpiTest(testDataFile = "is_list_palindromic.tsv")
 
 	public static boolean isLinkedListAPalindrome(ListNode<Integer> L) {
-		
-		
-		
+
 		return true;
 	}
 

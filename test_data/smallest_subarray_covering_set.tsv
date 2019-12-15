@@ -1,5 +1,6 @@
 array(string)	set(string)	int
 ["a", "b", "c", "b", "a", "d", "c", "a", "e", "a", "a", "b", "e"]	["b", "c", "e"]	6	TODO
+["R", "L", "G"]	["G"]	1	TODO
 ["a", "b", "c", "b", "a", "d", "c", "a", "e", "a", "a", "b", "e"]	["a", "c"]	2	TODO
 ["a", "b"]	["a", "b"]	2	TODO
 ["a", "b"]	["b", "a"]	2	TODO

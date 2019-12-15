@@ -1,6 +1,6 @@
 string	array(string)	array(int)
-barfoothefoobarman	["foo", "bar"]	[0, 9]	TODO
 dcacdabcd	["cd", "ab"]	[3, 5]	TODO
+barfoothefoobarman	["foo", "bar"]	[0, 9]	TODO
 iuwvllmkxvlliuwgue	["vll", "iuw"]	[0, 9]	TODO
 vftdjjdjjvftykudjjvftpfq	["vft", "djj", "yku"]	[6, 9, 12]	TODO
 ewciswwiswwiswwioxnuewci	["ewci", "swwi", "oxnu", "swwi"]	[8]	TODO

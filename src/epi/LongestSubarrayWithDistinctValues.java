@@ -33,24 +33,17 @@ public class LongestSubarrayWithDistinctValues {
 	@EpiTest(testDataFile = "longest_subarray_with_distinct_values.tsv")
 	public static int longestSubarrayWithDistinctEntries(List<Integer> A) {
 
-		int max = 0;
-
-		int contin = 0;
-		Map<Integer, Integer> map = new HashMap<>();
+		Map<Integer, Integer> latestIndex = new HashMap<>();
+		int startIndexofLongestSubarrayWithDistinctEntries = 0, result = 0;
 		for (int i = 0; i < A.size(); i++) {
-			if (map.containsKey(A.get(i))) {
-				if (contin > max) {
-					max = contin;
-				}
-				contin = 0;
+			Integer dupIndex = latestIndex.put(A.get(i), i);
+			if (dupIndex != null && dupIndex >= startIndexofLongestSubarrayWithDistinctEntries) {
+				result = Math.max(result, i - startIndexofLongestSubarrayWithDistinctEntries);
+				startIndexofLongestSubarrayWithDistinctEntries = dupIndex + 1;
 			}
-			map.put(A.get(i), i);
-			contin++;
-
 		}
-		if (contin > max)
-			max = contin;
-		return max;
+		result = Math.max(result, A.size() - startIndexofLongestSubarrayWithDistinctEntries);
+		return result;
 
 	}
 
